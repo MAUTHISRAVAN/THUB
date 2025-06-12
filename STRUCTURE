@@ -1,0 +1,13 @@
+rag-chatbot-project/
+├── workflows/
+│   └── rag-chatbot-workflow.json
+├── scripts/
+│   ├── setup.py
+│   └── utils.py
+├── docs/
+│   ├── README.md
+│   └── technical-approach.md
+├── data/
+│   └── sample-documents/
+├── tests/
+│   └── sample-queries.json
