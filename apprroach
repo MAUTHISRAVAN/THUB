@@ -1,0 +1,15 @@
+## RAG Design
+
+- **Chunking**: 500-token windows
+- **Embeddings**: `all-MiniLM-L6-v2`
+- **Vector DB**: Chroma (lightweight + local)
+- **Similarity Search**: Top-3 based on cosine similarity
+- **LLM**: GPT-3.5 (OpenAI API)
+
+## n8n Workflow Steps
+1. Trigger: HTTP Webhook
+2. Preprocessing: Clean input, validate query
+3. Python node: Embed + search
+4. Python node: Compose prompt + call OpenAI
+5. Response: Format and return
+6. Error node: Fallback text and log
